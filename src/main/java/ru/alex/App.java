@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class App 
 {
-    private static final int UNIQUE_COUNT_REPEATS = 1;
+    private static final int COUNT_REPEATS_FOR_UNIQUE = 1;
 
     public static void main( String[] args ){
         System.out.println(getFirstUniqueChar("22331"));
@@ -24,7 +24,7 @@ public class App
 
         for (int i = 0; i < str.length(); i++) {
             int countRepeats = symbolCounts.get(str.charAt(i));
-            if (countRepeats == UNIQUE_COUNT_REPEATS) {
+            if (countRepeats == COUNT_REPEATS_FOR_UNIQUE) {
                 firstUniqueSymbol = str.charAt(i);
                 break;
             }
